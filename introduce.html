@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./less/introduce.css">
+    <script>
+        let w = document.documentElement.clientWidth||document.body.clientWidth;
+        // w/640 = x/100
+        document.documentElement.style.fontSize = w/750*100+'px';
+    </script>
+    <script src="../2018_13/week6/个人简历/zepto.min.js"></script>
+    
+</head>
+<body>
+<div class="wraper" id="wraper">
+    <div class="content" id="content">
+
+    <section class="page one_page" data_one='first' id="page1">
+            <div class="bg_box">
+                <img src="../h5简历/img/书法.gif" class="bg_box" alt="">
+            </div>
+            <!-- <img src="https://res1.eqh5.com/o_1cfelsgig1k2e1misth18q76op1u.png?imageMogr2/auto-orient/thumbnail/199x388%3E/format/webp" class="my_pic" alt=""> -->
+            <div class="mainText">
+                <span class="leftText">
+                    <strong>姓 名 ：赵中慧</strong>
+                </span>
+                <span class="rightText">
+                    <strong>求职意向：前端开发</strong>
+                </span>
+            </div>
+            
+    </section>
+
+    <div id="music">
+            <div id="audio-btn">
+                <audio  src="./img/DAISHI DANCE&Cécile Corbel-Take Me Hands.mp3" id="media" class="media"  loop preload="metadata"></audio>
+            </div>
+    </div>
+
+    <section class="page two_page" data_two='second' hidden id="page2">
+        <div class="me">
+            <img src="./img/me .jpg" alt="">
+            <div><span>姓名：赵中慧</span></div>
+            <div><span>性别：女</span></div>
+            <div><span>年龄：24</span></div>
+            <div><span>籍贯：山东</span></div>
+            <div><span>毕业院校：佳木斯大学</span></div>
+            <div><span>最高学历：本 科</span></div>  
+            <div><span>联系方式：176 1006 9278</span></div>
+            <div><span>爱好：旅游 弹琴 上网</span></div>
+
+        </div>
+        <div class="dog">
+            <img src="./img/dog.jpg" alt="">
+        </div>
+        <div class="dog2">
+            <img src="./img/dog2.jpg" alt="">
+        </div>
+        <div class="dog3">
+                <img src="./img/dog3.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="page three_page" data_three='third' hidden id="page3">
+        <div class="title_work">🌸 工作经历 🌸</div>
+    <div class="package_top">
+        <div class="account">
+            <div class="time_one"><span>2014-2016</span><br></div>
+            <div class="des_one"><span>金融会计</span></div>
+        </div>
+        <div class="symbol">
+        <img src="./img/symbol.webp" alt="">
+        </div>
+        <div class="company">
+            <div class="hun_box">
+                <img src="../h5简历/img/icon.webp" alt="">
+                <span class="ani_company">恒生电子股份有限公司</span></div>
+            <div><span class="font_s">工作职责：到甲方项目上长期驻场，对私募基金的净值进行谨慎T+1估值并每日披露净值，与托管人每日核对账目明细，与管理人进行有效沟通解决问题，
+                对股票、债券、基金、期货、期权、融资融券、衍生品等业务有一定掌握</span></div>
+        </div>
+    </div>
+    <div class="package_bottom">
+        <div class="front_person">
+            <div class="time_one"><span>2016-2018</span></div>
+            <div class="des_one"><span>前端开发</span></div>
+        </div>
+        <div class="company_two">
+            <div class="hun_box">
+                <img src="../h5简历/img/icon.webp" alt="">
+                <span class="ani_company">北京圆心科技有限公司</span></div>
+            <div><span class="font_s">工作职责：1、根据产品原型开发前端代码，配合技术部完成后端数据的接口； 
+                    2、解决不同的浏览器及不同版本的兼容性问题； 
+                    3、优化载入速度及优先级，异步加载的实现； 
+                    4、Js交互原型的制作； 
+                    5、CSS、JS、vue框架维护。
+            </span></div>
+        </div>
+    </div>
+    </section>
+    </div>
+</div>
+</body>
+</html>
+<!-- <script src="../2018_13/week5/jquery-3.3.1.js"></script> -->
+<script src="./js/introduce.js"></script>
+

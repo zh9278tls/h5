@@ -1,0 +1,398 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.w {
+  width: 100%;
+  height: 100%;
+}
+.s {
+  text-shadow: 1px 1px 0px navajowh;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.hidden {
+  display: none;
+}
+.wraper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.wraper .content {
+  width: 100%;
+  height: 100%;
+}
+.wraper .content .one_page {
+  width: 100%;
+  height: 100%;
+}
+.wraper .content .one_page .bg_box {
+  width: 100%;
+  height: 100%;
+  background: url('https://res1.eqh5.com/o_1bliiqtsq1e0j1ioe138l1mqg12cu39.jpg?imageMogr2/auto-orient/thumbnail/375x521%3E/format/webp') center center;
+  background-size: 100% 100%;
+  animation: move 1s;
+}
+.wraper .content .one_page .my_pic {
+  margin: -4.5rem 0.2rem;
+  animation: drogdown 1s 1s forwards;
+  transform: translateY(-10rem);
+  opacity: 0;
+}
+.wraper .content .one_page .mainText {
+  text-align: center;
+  margin: -2rem;
+}
+.wraper .content .one_page .mainText span {
+  font-size: 0.4rem;
+  color: #333314;
+  padding: 0 0 0.2rem 0;
+  font-family: fangzheng_xbsjt;
+  display: block;
+  opacity: 0;
+}
+.wraper .content .one_page .mainText .leftText {
+  animation: leftJoin 1s 2s forwards;
+}
+.wraper .content .one_page .mainText .rightText {
+  animation: rightJoin 1s 2s forwards;
+}
+.wraper .content .one_page .myheadBox {
+  animation: move 4s forwards;
+}
+.wraper .content .one_page .myheadBox .myhead {
+  position: fixed;
+  top: -10rem;
+  left: 0.1rem;
+  width: 1.9rem;
+  animation: rot  100s linear infinite;
+}
+@keyframes move {
+  0% {
+    opacity: 0;
+    transform: scale(0.2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes drogdown {
+  0% {
+    transform: translateY(-20rem);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-10rem);
+    opacity: 1;
+  }
+}
+@keyframes leftJoin {
+  0% {
+    transform: translateX(-10rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes rightJoin {
+  0% {
+    transform: translateX(10rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes rot {
+  form {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rollIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+    transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes zoomInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  }
+}
+@keyframes fadeInLeftBig {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-2000px, 0, 0);
+    transform: translate3d(-2000px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes fadeOutUp {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+}
+@keyframes fadeInRightBig {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(2000px, 0, 0);
+    transform: translate3d(2000px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+.wraper .content .two_page {
+  background: url('../img/bg-water.webp') no-repeat center center;
+  background-size: 100% 100%;
+  transition: transform 1.5s;
+  width: 100%;
+  height: 100%;
+}
+.wraper .content .two_page .me {
+  width: 100%;
+  padding: 0.4rem 0.4rem;
+  overflow: hidden;
+}
+.wraper .content .two_page .me img {
+  float: left;
+  width: 3rem;
+  height: 5rem;
+  animation: move 3s;
+}
+.wraper .content .two_page .me div {
+  transform: translateX(-10rem);
+}
+.wraper .content .two_page .me div span {
+  font-size: 20px;
+  margin-left: 0.8rem;
+  font-family: cursive;
+  color: unset;
+  text-shadow: 0px 0px 20px brown;
+}
+.wraper .content .two_page .me div:nth-child(1) {
+  animation: fadeInLeftBig 1s  forwards;
+}
+.wraper .content .two_page .me div:nth-child(2) {
+  animation: fadeInLeftBig 1s 0.5s forwards;
+}
+.wraper .content .two_page .me div:nth-child(3) {
+  animation: fadeInLeftBig 1s 1s forwards;
+}
+.wraper .content .two_page .me div:nth-child(4) {
+  animation: fadeInLeftBig 1s 1.5s forwards;
+}
+.wraper .content .two_page .me div:nth-child(5) {
+  animation: fadeInLeftBig 1s 2s forwards;
+}
+.wraper .content .two_page .me div:nth-child(6) {
+  animation: fadeInLeftBig 1s 2.5s forwards;
+}
+.wraper .content .two_page .me div:nth-child(7) {
+  animation: fadeInLeftBig 1s 2.5s forwards;
+}
+.wraper .content .two_page .me div:nth-child(8) {
+  animation: fadeInLeftBig 1s 2.5s forwards;
+}
+.wraper .content .two_page .me div:nth-child(9) {
+  animation: fadeInLeftBig 1s 2.5s forwards;
+}
+.wraper .content .two_page .dog img {
+  width: 3rem;
+  transform: rotateZ(45deg);
+  float: left;
+  animation: rollIn 3s forwards;
+}
+.wraper .content .two_page .dog2 {
+  float: left;
+}
+.wraper .content .two_page .dog2 img {
+  width: 2rem;
+  height: 1.25rem;
+  transform: rotateZ(-30deg);
+  animation: zoomInUp  3s forwards;
+}
+.wraper .content .two_page .dog3 {
+  float: left;
+}
+.wraper .content .two_page .dog3 img {
+  width: 2.5rem;
+  height: 2.3rem;
+  animation: rollIn  4s forwards;
+}
+.wraper .content .three_page {
+  width: 100%;
+  height: 100%;
+  background: url('../img/bg-flower.webp.jpg') no-repeat center center;
+  background-size: 100% 100%;
+  font-size: 0.4rem;
+  transition: transform 1.5s;
+}
+.wraper .content .three_page .title_work {
+  font-size: 0.7rem;
+  text-align: center;
+  padding: 0.3rem;
+  animation: move 4s;
+}
+.wraper .content .three_page .package_top,
+.wraper .content .three_page .package_bottom {
+  width: 94%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.wraper .content .three_page .package_top .account,
+.wraper .content .three_page .package_bottom .account,
+.wraper .content .three_page .package_top .front_person,
+.wraper .content .three_page .package_bottom .front_person {
+  animation: fadeInLeftBig 2.5s forwards;
+  float: left;
+}
+.wraper .content .three_page .package_top .account .time_one,
+.wraper .content .three_page .package_bottom .account .time_one,
+.wraper .content .three_page .package_top .front_person .time_one,
+.wraper .content .three_page .package_bottom .front_person .time_one {
+  margin: 1rem 0rem;
+  font-weight: bold;
+}
+.wraper .content .three_page .package_top .account .des_one,
+.wraper .content .three_page .package_bottom .account .des_one,
+.wraper .content .three_page .package_top .front_person .des_one,
+.wraper .content .three_page .package_bottom .front_person .des_one {
+  margin: 1.5rem 0rem;
+}
+.wraper .content .three_page .package_top .company,
+.wraper .content .three_page .package_bottom .company,
+.wraper .content .three_page .package_top .company_two,
+.wraper .content .three_page .package_bottom .company_two {
+  margin-left: 2.6rem;
+}
+.wraper .content .three_page .package_top .company .font_s,
+.wraper .content .three_page .package_bottom .company .font_s,
+.wraper .content .three_page .package_top .company_two .font_s,
+.wraper .content .three_page .package_bottom .company_two .font_s {
+  font-size: 0.35rem;
+  padding: 0.2rem 0 0.5rem 0;
+  display: block;
+  text-shadow: 0px 1px 1px #f495bf;
+  transform: translateX(5rem);
+  animation: rightJoin 1.5s 2s forwards;
+}
+.wraper .content .three_page .hun_box {
+  text-align: center;
+  font-weight: bold;
+}
+.wraper .content .three_page .hun_box img {
+  margin-left: -0.9rem;
+  animation: move 2s forwards;
+}
+.wraper .content .three_page .hun_box .ani_company {
+  animation: move 5s forwards;
+}
+.wraper .content .three_page .symbol {
+  position: fixed;
+  left: 2.45rem;
+  height: 11rem;
+  top: 2rem;
+}
+.wraper .content .three_page .symbol img {
+  width: 100%;
+  height: 100%;
+  transform: translateY(-20rem);
+  animation: move 2s 1s forwards;
+}
+.wraper .content #music #audio-btn {
+  position: fixed;
+  top: 0.3rem;
+  left: 6.5rem;
+  width: 0.9rem;
+  height: 0.9rem;
+  background: url('http://as.eqh5.com/h5_view_2/images/bgmBtn-fbd2dc.svg') no-repeat center center;
+  animation: rotating 3s linear infinite;
+  -webkit-animation: rotating 3s linear infinite;
+  background-size: 65%;
+  z-index: 10000;
+}
